@@ -2,11 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="damianvanadrichem/index.css">
     <title>Terra Nostra</title>
-    <h1 style="color: blue;">Hello world</h1>
 </head>
 <body>
-<p1>I'm hosted with github!</p1>
+    <img class="side_imgleft" src="terra_nostra_patroon-kriegel_links.png" alt="Kriegel">
+    <div class="center">
+        <div class="padding">
+            <img class="logo" src="terra_nostra_logo_zwart.png" alt="Terra Nostra Logo">
+        </div>
+        <div class="padding">
+            <h1>UNDER CONSTRUCTION</h1>
+        </div>
+        <div class="paragraph">
+            <p>Terra Isis Gitane</p>
+            <p>@t3rranostra</p>
+            <p>06- 48 69 17 42</p>
+            <p>t3rranostra@gmail.com</p>
+        </div>
+    </div>
+<img class="side_imgright" src="terra_nostra_patroon-kriegel_rechts.png" alt="Terra Nosta Kriegel">
+
 </body>
 </html>
+
+
+
+<style>
+    html, body {margin: 0; height: 100%; overflow: hidden; background-image: url("background.jpg")}
+
+    h1{
+        font-size: 45px;
+    }
+
+    @font-face { font-family: BookmanStd; src: url('BookmanStd-Demi.otf'); }
+
+
+    .center{
+        position: absolute; /* or absolute */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        text-align: center;
+        font-family: "BookmanStd";
+    }
+
+    .padding{
+        padding: 10px 0 10px 0;
+    }
+
+    .paragraph{
+        font-size: 20px;
+    }
+
+    .logo{
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+    }
+
+    .side_imgleft{
+        left: 0;
+        top: 0;
+        position: fixed;
+        height: 100%;
+        width: auto;
+    }
+
+    .side_imgright{
+        right: 0;
+        top: 0;
+        position: fixed;
+        height: 100%;
+        width: auto;
+
+    }
+</style>
