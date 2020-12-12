@@ -6,6 +6,8 @@
 </head>
 <body>
 <img class="side_imgleft" src="terra_nostra_patroon-kriegel_links.png" alt="Kriegel">
+<img class="top_img" src="terra_nostra_patroon-kriegel_top.png" alt="Terra Nosta Kriegel">
+
 <div class="center">
     <div class="padding">
         <img class="logo" src="terra_nostra_logo_zwart.png" alt="Terra Nostra Logo">
@@ -27,6 +29,8 @@
     </div>
 </div>
 <img class="side_imgright" src="terra_nostra_patroon-kriegel_rechts.png" alt="Terra Nosta Kriegel">
+<img class="bottom_img" src="terra_nostra_patroon-kriegel_bottom.png" alt="Terra Nosta Kriegel">
+
 
 </body>
 </html>
@@ -96,6 +100,53 @@
         height: 100%;
         width: auto;
 
+    }
+
+    .bottom_img{
+        position: fixed;
+        width: 100%;
+        bottom: -50px;
+        left: 0;
+    }
+
+    .top_img{
+        width: 100%;
+    }
+
+    @media only screen and (min-device-width: 0) and (max-device-width: 700px) and (orientation:portrait) {
+        .side_imgright{
+            visibility: hidden;
+        }
+        .side_imgleft{
+            visibility: hidden;
+        }
+    }
+
+    @media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (orientation:landscape) {
+        .side_imgright{
+            visibility: hidden;
+        }
+        .side_imgleft{
+            visibility: hidden;
+        }
+    }
+
+    @media only screen and (min-device-width: 701px) and (orientation:portrait) {
+        .side_imgright{
+            visibility: hidden;
+        }
+        .side_imgleft{
+            visibility: hidden;
+        }
+    }
+
+    @media only screen and (min-device-width: 701px) and (orientation:landscape) {
+        .bottom_img{
+            visibility: hidden;
+        }
+        .top_img{
+            visibility: hidden;
+        }
     }
 
 
